@@ -23,7 +23,7 @@ Route::middleware('auth')->group(function () {
 });
 
 // Admin area (requires admin middleware)
-Route::get('/admin', [AdminController::class, 'index'])
+Route::get('/admin', [AdminController::class, 'dashboard'])
     ->name('admin.dashboard'); // No middleware applied
 
 // Define a route for the index view
